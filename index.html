@@ -10,17 +10,68 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="keywords" content=" mot, clés" />
 		<meta name="description" content="description du site" />
-		<title>Titre du site - titre de la page</title>
-        <link rel="icon" href="favicon.png" type="image/png" />
+		<title>Amandine Mazô - Portfolio</title>
+        <link rel="icon" href="img/anas.png" type="image/png" />
         <link rel="shortcut-icon" href="favicon.ico" type="image/ico" />
-		<link rel="stylesheet" href="styles.css" type="text/css" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 
 	</head>
 	<body>
 		<div id="container">
-			 contenu de ma page
+			<!-- header+main+aside+footer -->
+			 <header>
+			 	<!-- h1+nav+ul>li*3>a[href="#"]{menu $$} -->
+			 	<h1>Un super portfolio de la mort qui tue !!!</h1>
+			 	<!-- si LOGO, penser à le rendre clicable pour revenir à l'accueil -->
+			 	<nav>
+			 		<ul>
+			 			<li><a href="#section1" title="Accéder à un aperçu de mes travaux">Projets</a></li>
+			 			<li><a href="#section2" title="">menu 02</a></li>
+			 			<li><a href="#section3" title="">menu 03</a></li>
+			 		</ul>
+			 	</nav>
+			 </header>
+			 <main>
+			 	<!-- section[id="section$"]*3 -->
+			 	<section id="section1">
+			 		<h2></h2>
+			 		<ul>
+			 			<li>
+			 				<h3><abbr title="HyperText Markup Language">HTML</abbr></h3>
+			 				<meter min="0" max="100" value="70">70%</meter>
+			 			</li>
+			 			<li>
+			 				<h3><abbr title="Cascading StyleSheets">CSS</abbr></h3>
+							<meter min="1" max="5" value="4">4 sur 5</meter>
+			 			</li>
+			 		</ul>
+			 		
+			 	</section>
+			 	<section id="section2">
+			 		<h2></h2>
+			 	</section>
+			 	<section id="section3">
+			 		<h2></h2>
+			 		<article>
+			 			<header></header>
+			 			<p></p>
+			 			<p></p>
+			 			<aside></aside>
+			 			<footer></footer>
+			 		</article>
+			 	</section>
+			 </main>
+			 <aside></aside>
+			 <footer>
+			 	<address>
+			 		<a href="mailto:amandine.mazo@gmail.com">Ecrivez-moi un mail</a>, 
+			 		<a href="tel:+33688888888">téléphonez-moi</a>,
+					donnons-nous rendez vous à Paris !
+			 	</address>
+			 </footer>
 		</div><!-- #container -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- à supprimer avant la mise en ligne -->
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 	</body>
 </html>
