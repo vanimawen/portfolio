@@ -48,7 +48,10 @@ table {
 }
 
 /* reset perso */ 
-body, body *{
+body, body *,
+body *::after,
+body *::before,
+{
 	/* explique au navigateur comment appliquer la width :
 	content-box : la largeur s'applique au contenu
 	padding-box : la largeur s'applique au contenu+espace intérieur
@@ -57,13 +60,93 @@ body, body *{
 		box-sizing: border-box;
 }
 
-a{
+a {
 	color: inherit;
 	text-decoration: none;
 }
 /* fin du reset perso */
 
 /* Style général */
+header{
+	padding: 1rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	padding: 3rem;
+	border-bottom: .1rem solid #000; 
+}
+
+section:nth-of-type(odd){
+	background-color: gray;
+}
+
+/* #works {
+	order: -6;
+} */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.multi-column-layout {
+	-webkit-column-count: 2;
+	        column-count: 2;
+	-webkit-column-width: 45%;
+	        column-width: 45%;
+	-webkit-column-gap: 2.5rem;
+	        column-gap: 2.5rem;
+}
+
 /* Polices, couleurs, etc. */
+h1, h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1em;
+}
+
+h2 {
+	text-align: center;
+}
+.menu-item {
+	text-transform: uppercase;
+	padding: 1.5em;
+	border-radius: .5rem;
+	background-color: #3F47EE;
+	display: block;
+	font-size: .88em;
+	margin-bottom: .3rem;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-family: sans-serif;
+	letter-spacing: .2rem;
+}
+
+img.pub {
+	display: none;
+}
 
 /* Media queries avec l'approche Mobile First */
+@media screen and (min-width: 740px){
+	.menu{
+		display: flex;
+		justify-content: space-around;
+	}
+	img.pub{
+		display: inline-block;
+	}
+	.multi-column-layout{
+		-webkit-column-count: 3;
+		        column-count: 3;
+		-webkit-column-width: 30%;
+		        column-width: 30%;
+		-webkit-column-gap: 3rem;
+		        column-gap: 3rem;
+	}
+
+}
